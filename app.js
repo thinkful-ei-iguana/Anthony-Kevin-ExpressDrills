@@ -8,3 +8,7 @@ app.get('/sum', (req, res) => {
   res.set('Content-Type', 'text/html');
   res.end(`<html><body>${sum}</body></html>`);
 });
+
+app.listen(8000, () => {
+  console.log('Express server is listening on port 8000!');
+});
